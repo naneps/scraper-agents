@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, FolderGit2, LayoutGrid } from 'lucide-vue-next';
+import { BookOpen, FolderGit2, LayoutGrid, Globe, Calendar, Tags, FileText, Activity, Terminal } from 'lucide-vue-next';
 import AppLogo from '@/components/AppLogo.vue';
 import NavFooter from '@/components/NavFooter.vue';
 import NavMain from '@/components/NavMain.vue';
@@ -22,6 +22,36 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: dashboard(),
         icon: LayoutGrid,
+    },
+    {
+        title: 'Source Management',
+        href: '/admin/sources',
+        icon: Globe,
+    },
+    {
+        title: 'Scraper Tester',
+        href: '/admin/sources/tester',
+        icon: Terminal,
+    },
+    {
+        title: 'Schedules',
+        href: '/admin/schedules',
+        icon: Calendar,
+    },
+    {
+        title: 'Categories',
+        href: '/admin/categories',
+        icon: Tags,
+    },
+    {
+        title: 'Articles',
+        href: '/admin/articles',
+        icon: FileText,
+    },
+    {
+        title: 'System Logs',
+        href: '/admin/logs',
+        icon: Activity,
     },
 ];
 
